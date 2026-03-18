@@ -21,10 +21,15 @@ driver.maximize_window()
 # print(name.get_attribute('placeholder'))
 # print(name1.get_attribute('value'))
 #
-# driver.find_element(By.ID,'male').click()
-# driver.find_element(By.XPATH,'//label[text()="Monday"]/preceding-sibling::input').click()
-# name2 = driver.find_element(By.XPATH,'//input[@id="monday"]/following-sibling::label')
-# print(name2.text)
+male = driver.find_element(By.ID,'male')
+male.click()
+print(male.is_displayed())
+print(male.is_enabled()) ## only for button
+driver.find_element(By.XPATH,'//label[text()="Monday"]/preceding-sibling::input').click()
+name2 = driver.find_element(By.XPATH,'//input[@id="monday"]/following-sibling::label')
+print(name2.text)
+print(name2.is_selected())
+
 
 # name3 = driver.find_elements(By.NAME,'gender')
 # value = input('Enter gender: ')
@@ -36,18 +41,18 @@ driver.maximize_window()
 #
 # sleep(5)
 
-name3 = driver.find_elements(By.XPATH,'//div[@class="form-group"]/child::div[@class="form-check form-check-inline"]/child::input[@type="checkbox"]')
-print(len(name3))
-
-for i in name3:
-    i.click()
-    label = i.find_element(By.XPATH, './following-sibling::label')
-    print(label.text)
-    sleep(2)
-
-for i in reversed(name3):
-    i.click()
-    sleep(2)
+# name3 = driver.find_elements(By.XPATH,'//div[@class="form-group"]/child::div[@class="form-check form-check-inline"]/child::input[@type="checkbox"]')
+# print(len(name3))
+#
+# for i in name3:
+#     i.click()
+#     label = i.find_element(By.XPATH, './following-sibling::label')
+#     print(label.text)
+#     sleep(2)
+#
+# for i in reversed(name3):
+#     i.click()
+#     sleep(2)
 
 sleep(5)
 driver.quit()
