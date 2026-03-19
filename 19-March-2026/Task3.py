@@ -17,8 +17,8 @@ wait = WebDriverWait(driver, 10)
 search = wait.until(EC.presence_of_element_located((By.ID,'twotabsearchtextbox')))
 search.send_keys('mobiles')
 
-suggestion = wait.until(EC.presence_of_element_located((By.XPATH, '//div[@class="left-pane-results-container"]/div[4]')))
-suggestion.click()
+bar = wait.until(EC.presence_of_element_located((By.XPATH, '//div[@class="left-pane-results-container"]/div[4]')))
+bar.click()
 
 wait.until(EC.presence_of_element_located((By.XPATH, '//span[@data-action="a-dropdown-button"]'))).click()
 wait.until(EC.presence_of_element_located((By.ID,'s-result-sort-select_4'))).click()
