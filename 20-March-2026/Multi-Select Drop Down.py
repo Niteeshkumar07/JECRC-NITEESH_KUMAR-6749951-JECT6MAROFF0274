@@ -35,7 +35,7 @@ driver = webdriver.Chrome(options=opts)
 # sleep(4)
 
 
-driver.get(r'C:\Users\Niteesh Kumar\OneDrive\Desktop\seleniumPractice\19-March-2026\playlist.html')
+driver.get(r'C:\Users\Niteesh Kumar\OneDrive\Desktop\seleniumPractice\20-March-2026\playlist.html')
 driver.maximize_window()
 
 song_list = driver.find_element(By.ID,'songs')
