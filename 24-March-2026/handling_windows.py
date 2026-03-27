@@ -23,7 +23,6 @@ sleep(3)
 #
 # sleep(2)
 
-
 #opening a website in new window
 
 driver.switch_to.new_window('window')
