@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-03-28T13:11:21.237981" rpa="false" schemaversion="5">
+<suite id="s1" name="Screenshot" source="C:\Users\Niteesh Kumar\OneDrive\Desktop\seleniumPractice\28-March-2026\screenshot.robot">
+<test id="s1-t1" name="Screenshots" line="9">
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>C:\\Users\\Niteesh Kumar\\OneDrive\\Desktop\\seleniumPractice\\28-March-2026/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-03-28T13:11:21.704894" elapsed="0.000762"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:11:21.706818" level="INFO">Opening browser 'chrome' to base url 'https://in.bookmyshow.com/explore/home/jaipur'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-28T13:11:21.706428" elapsed="4.961788"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-28T13:11:26.669569" elapsed="0.083466"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T13:11:28.755937" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T13:11:26.754090" elapsed="2.002211"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:11:29.158362" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/fullpage.png"&gt;&lt;img src="../Screenshots/fullpage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>fullpage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-28T13:11:28.757970" elapsed="0.400737"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-28T13:11:29.159795" elapsed="2.315166"/>
+</kw>
+<status status="PASS" start="2026-03-28T13:11:21.702417" elapsed="9.773200"/>
+</test>
+<status status="PASS" start="2026-03-28T13:11:21.240401" elapsed="10.236702"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Screenshot" id="s1" pass="1" fail="0" skip="0">Screenshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
