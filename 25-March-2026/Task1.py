@@ -68,6 +68,5 @@ print(fl.text)
 
 
 
-
 sleep(2)
 driver.quit()
