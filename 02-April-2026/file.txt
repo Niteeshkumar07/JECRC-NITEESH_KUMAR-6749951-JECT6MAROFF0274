@@ -1,0 +1,7 @@
+robot -d reports --timestampoutputs filename
+
+lOG fOUR TYPES->
+                Info,Debug,Warning,Error
+
+
+robot -d "reports/$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss')"  <filename>

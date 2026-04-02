@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-04-02T11:07:37.315250" rpa="false" schemaversion="5">
+<suite id="s1" name="Arg" source="C:\Users\Niteesh Kumar\OneDrive\Desktop\seleniumPractice\02-April-2026\arg.robot">
+<test id="s1-t1" name="Login" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T11:07:37.524513" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com/account/login'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T11:07:37.524228" elapsed="4.537242"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-02T11:07:45.063735" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-02T11:07:42.062587" elapsed="3.001424"/>
+</kw>
+<kw name="Login Success">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T11:07:45.066234" level="INFO">Typing text 'cheeseburger@gmail.com' into text field 'id=customer_email'.</msg>
+<arg>id=customer_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T11:07:45.065528" elapsed="0.248447"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T11:07:45.315927" level="INFO">Typing text '123455' into text field 'id=customer_password'.</msg>
+<arg>id=customer_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T11:07:45.314938" elapsed="0.093121"/>
+</kw>
+<arg>cheeseburger@gmail.com</arg>
+<arg>123455</arg>
+<status status="PASS" start="2026-04-02T11:07:45.064938" elapsed="0.343297"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-02T11:07:48.409344" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-02T11:07:45.408590" elapsed="3.000952"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-02T11:07:48.410337" elapsed="2.214910"/>
+</kw>
+<status status="PASS" start="2026-04-02T11:07:37.523149" elapsed="13.102910"/>
+</test>
+<status status="PASS" start="2026-04-02T11:07:37.316962" elapsed="13.311167"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Arg" id="s1" pass="1" fail="0" skip="0">Arg</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
