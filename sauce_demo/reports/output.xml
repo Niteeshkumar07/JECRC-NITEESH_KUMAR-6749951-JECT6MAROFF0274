@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-04-02T12:58:06.428423" rpa="false" schemaversion="5">
+<suite id="s1" name="Trail" source="C:\Users\Niteesh Kumar\OneDrive\Desktop\seleniumPractice\sauce_demo\trail.robot">
+<test id="s1-t1" name="tc1" line="6">
+<kw name="Open Application" owner="common_resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:58:06.878837" level="INFO">Opening browser 'edge' to base url 'https://sauce-demo.myshopify.com/'.</msg>
+<msg time="2026-04-02T12:58:07.871273" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_146_WINDOWS)); using driver found in the cache</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T12:58:06.878519" elapsed="4.029381"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T12:58:10.909484" elapsed="0.079342"/>
+</kw>
+<arg>https://sauce-demo.myshopify.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-02T12:58:06.877202" elapsed="4.112367"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-02T12:58:14.066937" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-02T12:58:10.990801" elapsed="3.076408"/>
+</kw>
+<kw name="Close Application" owner="common_resources">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-02T12:58:14.128611" elapsed="6.987998"/>
+</kw>
+<status status="PASS" start="2026-04-02T12:58:14.127478" elapsed="6.989448"/>
+</kw>
+<status status="PASS" start="2026-04-02T12:58:06.876084" elapsed="14.241497"/>
+</test>
+<status status="PASS" start="2026-04-02T12:58:06.431263" elapsed="14.687822"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Trail" id="s1" pass="1" fail="0" skip="0">Trail</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-02T12:58:07.871273" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_146_WINDOWS)); using driver found in the cache</msg>
+</errors>
+</robot>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-04-02T15:53:32.478503" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login Page" source="C:\Users\Niteesh Kumar\OneDrive\Desktop\seleniumPractice\sauce_demo\tests\functional\test_login_page.robot">
+<test id="s1-t1" name="TC02 Login User" line="9">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:53:32.742030" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com/'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T15:53:32.741791" elapsed="2.750917"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T15:53:35.493128" elapsed="0.049901"/>
+</kw>
+<arg>https://sauce-demo.myshopify.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-02T15:53:32.741100" elapsed="2.802170"/>
+</kw>
+<kw name="Login to the application" owner="login_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:53:35.546223" level="INFO">Clicking element 'xpath=//a[@id="customer_login_link"]'.</msg>
+<arg>${login_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:53:35.545338" elapsed="1.522923"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:53:37.069441" level="INFO">Clicking on login link</msg>
+<arg>Clicking on login link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.068674" elapsed="0.000907"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:53:37.070488" level="INFO">Typing text 'tonyembark@gmail.com' into text field 'xpath=//input[@id="customer_email"]'.</msg>
+<arg>${login_email_field}</arg>
+<arg>${login_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.069946" elapsed="0.351705"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:53:37.422471" level="INFO">Entering the email</msg>
+<arg>Entering the email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.422001" elapsed="0.000574"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:53:37.423266" level="INFO">Typing text 'tony@123' into text field 'xpath=//input[@id="customer_password"]'.</msg>
+<arg>${login_password_field}</arg>
+<arg>${login_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.422858" elapsed="0.259160"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:53:37.682959" level="INFO">Entering the password</msg>
+<arg>Entering the password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.682305" elapsed="0.000787"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:53:37.683611" level="INFO">Clicking element 'xpath=//input[@value="Sign In"]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.683323" elapsed="0.188795"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:53:37.872899" level="INFO">Clicking on login btn</msg>
+<arg>Clicking on login btn</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.872406" elapsed="0.000597"/>
+</kw>
+<arg>tonyembark@gmail.com</arg>
+<arg>tony@123</arg>
+<status status="PASS" start="2026-04-02T15:53:35.544230" elapsed="2.328912"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-02T15:53:57.874974" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-02T15:53:37.873656" elapsed="20.001516"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-02T15:53:57.876763" elapsed="6.295133"/>
+</kw>
+<status status="PASS" start="2026-04-02T15:53:57.876207" elapsed="6.295892"/>
+</kw>
+<status status="PASS" start="2026-04-02T15:53:32.740038" elapsed="31.432650"/>
+</test>
+<status status="PASS" start="2026-04-02T15:53:32.480927" elapsed="31.693774"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Login Page" id="s1" pass="1" fail="0" skip="0">Test Login Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

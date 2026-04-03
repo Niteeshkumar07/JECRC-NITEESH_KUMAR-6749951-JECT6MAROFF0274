@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-04-02T15:42:10.361502" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login Page" source="C:\Users\Niteesh Kumar\OneDrive\Desktop\seleniumPractice\sauce_demo\tests\functional\test_login_page.robot">
+<test id="s1-t1" name="TC02 Login User" line="9">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:42:10.616676" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com/'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T15:42:10.616405" elapsed="2.906458"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T15:42:13.523159" elapsed="0.032529"/>
+</kw>
+<arg>https://sauce-demo.myshopify.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-02T15:42:10.615732" elapsed="2.940242"/>
+</kw>
+<kw name="Login to the application" owner="login_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:42:13.558228" level="INFO">Clicking element 'xpath=//a[@id="customer_login_link"]'.</msg>
+<arg>${login_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:42:13.557445" elapsed="0.896821"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:42:14.455042" level="INFO">Clicking on login link</msg>
+<arg>Clicking on login link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:42:14.454562" elapsed="0.000573"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:42:14.455718" level="INFO">Typing text 'cheeseburger@gmail.com' into text field 'xpath=//input[@id="customer_email"]'.</msg>
+<arg>${login_email_field}</arg>
+<arg>${login_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:42:14.455384" elapsed="0.265647"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:42:14.721737" level="INFO">Entering the email</msg>
+<arg>Entering the email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:42:14.721297" elapsed="0.000513"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:42:14.722286" level="INFO">Typing text 'tony@123' into text field 'xpath=//input[@id="customer_password"]'.</msg>
+<arg>${login_password_field}</arg>
+<arg>${login_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:42:14.721968" elapsed="0.204313"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:42:14.927302" level="INFO">Entering the password</msg>
+<arg>Entering the password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:42:14.926622" elapsed="0.000830"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:42:14.928302" level="INFO">Clicking element 'xpath=//input[@value="Sign In"]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T15:42:14.927772" elapsed="0.171693"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T15:42:15.100120" level="INFO">Clicking on login btn</msg>
+<arg>Clicking on login btn</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T15:42:15.099699" elapsed="0.000503"/>
+</kw>
+<arg>cheeseburger@gmail.com</arg>
+<arg>tony@123</arg>
+<status status="PASS" start="2026-04-02T15:42:13.556860" elapsed="1.543455"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-02T15:42:15.101575" elapsed="6.224053"/>
+</kw>
+<status status="PASS" start="2026-04-02T15:42:15.100938" elapsed="6.224962"/>
+</kw>
+<status status="PASS" start="2026-04-02T15:42:10.614571" elapsed="10.711897"/>
+</test>
+<status status="PASS" start="2026-04-02T15:42:10.363415" elapsed="10.964823"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Login Page" id="s1" pass="1" fail="0" skip="0">Test Login Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
